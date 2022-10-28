@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    display: grid;
+    background-color: rgb(226, 226, 226);
+    flex-wrap: wrap;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 1fr;
+}
+
+header {
+    background-color: rgb(226, 226, 226);
+    color: #1a2b50;
+    text-align: center;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria;
+    padding: 20px 30px 20px 30px;
+    row-gap: 20px;
+}
+
+
+nav {
+    background-color: #1a2b50;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 0px 0px 7px #1a2b50;
+    display: flex;
+    display: grid;
+    row-gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+a:hover{
+   color: #929bad;
+}
+
+.jogos{
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    display: grid;
+    width: 30vh;
+    height: 4vh;
+    align-items: center;
+    
+}
+.jogos:hover{
+    background-color: #1a2b50;
+}
+
+main{
+    display: flex;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+section {
+    display: flex;
+    /* display: grid; */
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 70px;
+}
+
+
+aside {
+    background-image: linear-gradient(to bottom, white, rgb(144, 144, 239));
+    border: 1px solid #1a2b50;
+    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 100px;
+    border-radius: 12px;
+    align-items: center;
+    padding: 20px;
+    width: 85vh;
+    min-width: 300px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0px 0px 7px #1a2b50;
+    transition: width .5s, height .5s;
+}
+
+aside ul {
+    display: grid;
+    row-gap: 4px;
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+aside img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+aside:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #1a2b50;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-top: auto;
+    bottom: 0;
+    color: white;
+    padding: 10px;
+}
+
